@@ -1,4 +1,4 @@
-package javat.lang.clazz;
+package javat.lang;
 
 public class ClassTest {
 
@@ -16,7 +16,7 @@ public class ClassTest {
 		Class cls3 = null;
 		try {
 			// 第三种表现形式
-			cls3 = Class.forName("javat.lang.clazz.Foo1"); // 类加载
+			cls3 = Class.forName("javat.lang.Foo1"); // 类加载
 		} catch (ClassNotFoundException e) {
 			e.printStackTrace();
 		}

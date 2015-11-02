@@ -1,4 +1,4 @@
-package javat.lang.clazz;
+package javat.lang;
 
 public class ClassTest2 {
 
