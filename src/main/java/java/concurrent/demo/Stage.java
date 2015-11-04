@@ -1,4 +1,4 @@
-package master.java.concurrent.demo;
+package java.concurrent.demo;
 
 /**
  * 隋唐演义大戏舞台

@@ -1,4 +1,4 @@
-package master.java.concurrent.demo;
+package java.concurrent.demo;
 
 /**
  * Interrupt方法并不能停止线程执行

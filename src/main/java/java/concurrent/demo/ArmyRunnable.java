@@ -1,4 +1,4 @@
-package master.java.concurrent.demo;
+package java.concurrent.demo;
 
 // 军队线程
 // 模拟作战双方的行为

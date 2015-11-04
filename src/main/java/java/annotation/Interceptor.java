@@ -1,4 +1,4 @@
-package master.java.annotation;
+package java.annotation;
 
 public interface Interceptor<T> {
 

@@ -1,4 +1,4 @@
-package master.java.concurrent.demo;
+package java.concurrent.demo;
 
 public class KeyPersonThread extends Thread {
 
