@@ -12,7 +12,8 @@ public class BaseTest {
 
 		BaseTest a = new BaseTest();
 		BaseTest b = a;
-		System.out.print(a == b);
+		System.out.println(a == b);
 
+		System.out.println(42 / 8);
 	}
 }
