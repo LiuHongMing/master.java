@@ -2,23 +2,13 @@ package javat.sun.misc;
 
 import java.lang.reflect.Field;
 
+import master.java.UnsafeSupport;
 import sun.misc.Unsafe;
 
 public class DirectBufferTest {
 
 	public static void main(String[] args) {
-		Unsafe unsafe = null;
-		try {
-
-			Field field = Unsafe.class.getDeclaredField("theUnsafe");
-			field.setAccessible(true);
-
-			unsafe = (Unsafe) field.get(null);
-
-		} catch (NoSuchFieldException | SecurityException
-				| IllegalArgumentException | IllegalAccessException e) {
-			e.printStackTrace();
-		}
+		Unsafe unsafe = UnsafeSupport.getInstance();
 
 		long oneHundred = 100;
 		byte size = 1;
