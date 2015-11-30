@@ -1,4 +1,4 @@
-package chapter05;
+package java.concurrent.art.chapter05;
 
 import java.util.ArrayList;
 import java.util.Collection;

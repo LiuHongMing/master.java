@@ -1,4 +1,4 @@
-package chapter03;
+package java.concurrent.art.chapter03;
 
 class SynchronizedExample {
     int     a    = 0;

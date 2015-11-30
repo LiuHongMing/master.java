@@ -1,4 +1,4 @@
-package chapter03;
+package java.concurrent.art.chapter03;
 
 class ReorderExample {
     int     a    = 0;

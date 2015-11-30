@@ -1,4 +1,4 @@
-package chapter04;
+package java.concurrent.art.chapter04;
 
 /**
  * 6-10

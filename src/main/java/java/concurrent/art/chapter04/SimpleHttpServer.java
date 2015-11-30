@@ -1,7 +1,7 @@
 /**
  * 
  */
-package chapter04;
+package java.concurrent.art.chapter04;
 
 import java.io.BufferedReader;
 import java.io.ByteArrayOutputStream;

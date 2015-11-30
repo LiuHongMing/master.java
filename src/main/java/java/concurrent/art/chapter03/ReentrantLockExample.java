@@ -1,4 +1,4 @@
-package chapter03;
+package java.concurrent.art.chapter03;
 
 import java.util.concurrent.locks.ReentrantLock;
 
