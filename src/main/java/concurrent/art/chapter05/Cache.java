@@ -1,4 +1,4 @@
-package java.concurrent.art.chapter05;
+package concurrent.art.chapter05;
 
 import java.util.HashMap;
 import java.util.Map;

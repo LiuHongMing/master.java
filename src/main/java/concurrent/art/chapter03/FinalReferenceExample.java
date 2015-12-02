@@ -1,4 +1,4 @@
-package java.concurrent.art.chapter03;
+package concurrent.art.chapter03;
 
 public class FinalReferenceExample {
     final int[]                  intArray; //final是引用类型

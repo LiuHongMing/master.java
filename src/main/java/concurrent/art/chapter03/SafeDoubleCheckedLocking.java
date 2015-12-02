@@ -1,4 +1,4 @@
-package java.concurrent.art.chapter03;
+package concurrent.art.chapter03;
 
 public class SafeDoubleCheckedLocking {
     private volatile static Instance instance;

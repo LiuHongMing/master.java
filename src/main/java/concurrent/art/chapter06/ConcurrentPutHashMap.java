@@ -2,7 +2,7 @@
  * Alipay.com Inc.
  * Copyright (c) 2004-2015 All Rights Reserved.
  */
-package java.concurrent.art.chapter06;
+package concurrent.art.chapter06;
 
 import java.util.HashMap;
 import java.util.UUID;

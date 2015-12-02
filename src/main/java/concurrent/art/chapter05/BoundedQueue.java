@@ -1,7 +1,7 @@
 /**
  * 
  */
-package java.concurrent.art.chapter05;
+package concurrent.art.chapter05;
 
 import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.Lock;

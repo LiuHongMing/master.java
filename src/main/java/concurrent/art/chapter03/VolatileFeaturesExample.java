@@ -1,4 +1,4 @@
-package java.concurrent.art.chapter03;
+package concurrent.art.chapter03;
 
 class VolatileFeaturesExample {
     volatile long vl = 0L; //使用volatile声明64位的long型变量

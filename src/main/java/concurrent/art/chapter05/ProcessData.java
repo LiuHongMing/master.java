@@ -1,4 +1,4 @@
-package java.concurrent.art.chapter05;
+package concurrent.art.chapter05;
 
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantReadWriteLock;

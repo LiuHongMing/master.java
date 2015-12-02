@@ -1,7 +1,7 @@
 /**
  * 
  */
-package java.concurrent.art.chapter04;
+package concurrent.art.chapter04;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
