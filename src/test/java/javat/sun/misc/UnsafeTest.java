@@ -1,8 +1,7 @@
 package javat.sun.misc;
 
-import com.google.gson.Gson;
-import master.java.AnalyzeTarget;
-import master.java.UnsafeSupport;
+import java.demo.AnalyzeTarget;
+import java.demo.UnsafeSupport;
 import org.junit.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
