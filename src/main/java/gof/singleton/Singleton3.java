@@ -1,4 +1,4 @@
-package com.jason.test.singleton;
+package gof.singleton;
 
 /**
  * 懶汉式单例

@@ -1,4 +1,4 @@
-package com.jason.test.singleton;
+package gof.singleton;
 
 /**
  * JVM虚拟机同步机制实现
