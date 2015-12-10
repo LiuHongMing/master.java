@@ -5,8 +5,8 @@ import java.util.concurrent.TimeUnit;
 public class ThreadTest {
 
     public static void main(String[] args) {
-        ThreadTest.Sleepy sleepy = new ThreadTest.Sleepy();
-        new Thread(sleepy).start();
+        ThreadTest tt = new ThreadTest();
+        tt.doSleep();
         System.out.println("I am tired...");
         try {
             TimeUnit.SECONDS.sleep(5);
@@ -16,8 +16,12 @@ public class ThreadTest {
         System.out.println("Oh yeah~");
     }
 
-    static class Sleepy implements Runnable {
-        public Sleepy() {}
+    public void doSleep() {
+        Sleepy sleepy = new Sleepy();
+        new Thread(sleepy).start();
+    }
+
+    class Sleepy implements Runnable {
 
         @Override
         public void run() {
