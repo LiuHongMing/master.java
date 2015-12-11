@@ -18,7 +18,10 @@ public class ThreadTest {
 
     public void doSleep() {
         Sleepy sleepy = new Sleepy();
-        new Thread(sleepy).start();
+        new Thread(sleepy, "Sleepy").start();
+
+        Counter counter = new Counter();
+        new Thread(counter, "Counter").start();
     }
 
     class Sleepy implements Runnable {
@@ -27,11 +30,30 @@ public class ThreadTest {
         public void run() {
             try {
                 System.out.println("I want to sleep!");
-                TimeUnit.SECONDS.sleep(10);
+                TimeUnit.SECONDS.sleep(100000);
                 System.out.println("Have a good time ^_^");
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
+        }
+    }
+
+    class Counter implements Runnable {
+
+        private volatile int result = 0;
+
+        @Override
+        public void run() {
+            int val = 0;
+            for (int i = 0; i < 100; i++) {
+                val += i;
+                try {
+                    TimeUnit.SECONDS.sleep(1);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+            }
+            result = val;
         }
     }
 
