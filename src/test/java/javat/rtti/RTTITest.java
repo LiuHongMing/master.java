@@ -19,6 +19,9 @@ class Toy {
 
 }
 
+/**
+ * RTTI£¨Run-Time Type Information)
+ */
 public class RTTITest {
 
     public static void printInfo(Class cc) {
