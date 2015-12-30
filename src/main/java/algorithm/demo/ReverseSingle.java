@@ -48,11 +48,48 @@ public class ReverseSingle {
         return next;
     }
 
+    // ±éÀú
+    public static Node reverse2(Node head) {
+
+        if (head == null) {
+            return head;
+        }
+
+//        Node curr = head;
+//        while (true) {
+//            Node pre = curr.getNextNode();
+//            if (pre == null) {
+//                curr.setNextNode(null);
+//                break;
+//            }
+//
+//            Node next = pre.getNextNode();
+//            pre.setNextNode(head);
+//            curr.setNextNode(next);
+//
+//            head = pre;
+//        }
+
+        Node pre = head;
+        Node curr = head.getNextNode();
+        Node next;
+        while (null != curr) {
+            next = curr.getNextNode();
+            curr.setNextNode(pre);
+            pre = curr;
+            curr = next;
+        }
+        head.setNextNode(null);
+        head = pre;
+
+        return head;
+    }
+
     public static void main(String[] args) {
         Node head = Node.build(97);
         Node curr = null;
         Node tmp;
-        for (int i = 1; i < 4; i++) {
+        for (int i = 1; i < 10; i++) {
             tmp = Node.build(i + 97);
             if (1 == i) {
                 head.setNextNode(tmp);
@@ -68,7 +105,7 @@ public class ReverseSingle {
             tail = tail.getNextNode();
         } while (tail != null);
         System.out.print(",");
-        tail = ReverseSingle.reverse(head);
+        tail = ReverseSingle.reverse2(head);
         do {
             System.out.print((char) tail.getValue());
             tail = tail.getNextNode();
