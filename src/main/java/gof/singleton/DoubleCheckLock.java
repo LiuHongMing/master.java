@@ -1,7 +1,7 @@
 package gof.singleton;
 
 /**
- * 单例模式-双检锁
+ * 锟斤拷锟斤拷模式-双锟斤拷锟斤拷
  *
  * @author J.Ming
  *
@@ -17,8 +17,6 @@ public class DoubleCheckLock {
         if (instance == null) {
             synchronized (DoubleCheckLock.class) {
                 if (instance ==  null) {
-                    // 多线程环境下初始化阶段
-                    // 存在线程安全问题
                     instance = new DoubleCheckLock();
                 }
             }
