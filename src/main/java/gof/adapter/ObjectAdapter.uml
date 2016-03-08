@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement />
+  <nodes>
+    <node x="-47.84049390968494" y="-481.008476191279">gof.adapter.Adaptee2</node>
+    <node x="-322.0" y="-289.7075892016358">gof.adapter.Adapter2</node>
+    <node x="-544.7248137180023" y="-528.0">gof.adapter.Target</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="gof.adapter.Adapter2" target="gof.adapter.Adaptee2">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="gof.adapter.Adapter2" target="gof.adapter.Target">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="-225.0" y="-370.0" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

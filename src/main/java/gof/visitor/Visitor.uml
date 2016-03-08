@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement />
+  <nodes>
+    <node x="-66.0" y="564.0">gof.visitor.ObjectStruture</node>
+    <node x="-536.0" y="363.0">gof.visitor.Client</node>
+    <node x="390.0" y="1.0">gof.visitor.Element</node>
+    <node x="-204.0" y="162.5">gof.visitor.Visitor</node>
+    <node x="-205.0" y="-70.0">gof.visitor.IVisitor</node>
+    <node x="174.0" y="261.0">gof.visitor.ConcreteElement2</node>
+    <node x="464.0" y="262.0">gof.visitor.ConcreteElement1</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="gof.visitor.ConcreteElement2" target="gof.visitor.Element">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="gof.visitor.ConcreteElement1" target="gof.visitor.Element">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="gof.visitor.Visitor" target="gof.visitor.IVisitor">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="58.0" y="274.0" />
+  <SelectedNodes>
+    <node>gof.visitor.ObjectStruture</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

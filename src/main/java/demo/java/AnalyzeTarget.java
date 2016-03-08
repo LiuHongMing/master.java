@@ -1,4 +1,4 @@
-package java.demo;
+package demo.java;
 
 public class AnalyzeTarget {
 

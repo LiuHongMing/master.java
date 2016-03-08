@@ -1,4 +1,4 @@
-package java.demo;
+package demo.java;
 
 import org.slf4j.LoggerFactory;
 import sun.misc.Unsafe;

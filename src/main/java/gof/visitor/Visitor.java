@@ -1,4 +1,4 @@
-package gof.singleton;
+package gof.visitor;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -46,13 +46,6 @@ public class Visitor implements IVisitor {
     @Override
     public void visit(ConcreteElement2 e) {
         e.doSomething();
-    }
-
-    public static void main(String[] args) {
-        List<Element> list = ObjectStruture.getList();
-        for (Element e : list) {
-            e.accept(new Visitor());
-        }
     }
 
 }
