@@ -1,6 +1,6 @@
 package javat.sun.misc;
 
-import java.demo.UnsafeSupport;
+import demo.java.UnsafeSupport;
 import sun.misc.Unsafe;
 
 public class DirectBufferTest {

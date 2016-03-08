@@ -1,7 +1,7 @@
 package javat.sun.misc;
 
-import java.demo.AnalyzeTarget;
-import java.demo.UnsafeSupport;
+import demo.java.AnalyzeTarget;
+import demo.java.UnsafeSupport;
 import org.junit.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
