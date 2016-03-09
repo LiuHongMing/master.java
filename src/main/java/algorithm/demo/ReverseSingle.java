@@ -36,7 +36,6 @@ public class ReverseSingle {
         }
     }
 
-    // µİ¹é
     public static Node reverse(Node head) {
         if (head == null || head.getNextNode() == null) {
             return head;
@@ -48,7 +47,6 @@ public class ReverseSingle {
         return next;
     }
 
-    // ±éÀú
     public static Node reverse2(Node head) {
 
         if (head == null) {
