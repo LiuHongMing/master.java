@@ -15,5 +15,8 @@ public class BaseTest {
         System.out.println(a == b);
 
         System.out.println("abc" == "abc");
+
+        System.out.println(0x7FFFFFFF);
+        System.out.println(0xFFFFFFFF);
     }
 }
