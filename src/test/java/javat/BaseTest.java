@@ -20,6 +20,10 @@ public class BaseTest {
         System.out.println(0xFFFFFFFF);
 
         System.out.println(square2(16));
+
+        System.out.println(Integer.toBinaryString(-1));
+        System.out.println(Integer.toBinaryString(-1 << 29));
+        System.out.println(Integer.toBinaryString(-1 << 29 | 1));
     }
 
     public static int square2(int n) {
