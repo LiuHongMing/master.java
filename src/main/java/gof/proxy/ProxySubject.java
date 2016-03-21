@@ -15,7 +15,7 @@ public class ProxySubject implements Subject {
 
     @Override
     public void visit() {
-        System.out.println("I am ProxySubject, I am invoke realSubject method");
+        System.out.println("I am 'ProxySubject', I am invoke realSubject method");
         realSubject.visit();
     }
 }
