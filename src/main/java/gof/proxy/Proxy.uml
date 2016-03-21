@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement />
+  <nodes>
+    <node x="-95.81455154568167" y="-266.12294285619157">gof.proxy.Subject</node>
+    <node x="14.0" y="-69.18020732415482">gof.proxy.RealSubject</node>
+    <node x="-332.04727869645046" y="-263.0">gof.proxy.Client</node>
+    <node x="-202.04727869645046" y="-73.0">gof.proxy.ProxySubject</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="gof.proxy.RealSubject" target="gof.proxy.Subject">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="gof.proxy.ProxySubject" target="gof.proxy.Subject">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="gof.proxy.Client" target="gof.proxy.RealSubject">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="gof.proxy.Client" target="gof.proxy.ProxySubject">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="0.0" y="0.0" />
+  <SelectedNodes />
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
