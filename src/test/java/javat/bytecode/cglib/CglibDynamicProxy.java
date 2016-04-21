@@ -25,6 +25,7 @@ public class CglibDynamicProxy implements MethodInterceptor {
 
     @Override
     public Object intercept(Object obj, Method method, Object[] args, MethodProxy proxy) throws Throwable {
+        System.out.println("proxy.MethodInterceptor.intercept");
         return proxy.invokeSuper(obj, args);
     }
 
