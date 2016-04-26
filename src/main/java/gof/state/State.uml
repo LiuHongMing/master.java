@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement />
+  <nodes>
+    <node x="551.0" y="329.0">gof.state.PublishState</node>
+    <node x="250.0" y="496.0">gof.state.DraftState</node>
+    <node x="596.0000000000002" y="110.44038318078935">gof.state.CompletedState</node>
+    <node x="193.44754295757355" y="23.22019159039465">gof.state.State</node>
+    <node x="-56.0" y="313.0">gof.state.StartState</node>
+    <node x="-222.12745704242639" y="-1.7798084096054083">gof.state.Context</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="gof.state.PublishState" target="gof.state.CompletedState">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="gof.state.CompletedState" target="gof.state.State">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="gof.state.PublishState" target="gof.state.State">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="gof.state.DraftState" target="gof.state.State">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="gof.state.DraftState" target="gof.state.PublishState">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="gof.state.StartState" target="gof.state.State">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="gof.state.StartState" target="gof.state.DraftState">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="gof.state.Context" target="gof.state.State">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="250.0" y="333.0" />
+  <SelectedNodes>
+    <node>gof.state.PublishState</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Constructors</Category>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
