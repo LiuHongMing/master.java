@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement />
+  <nodes>
+    <node x="-29.36278671469512" y="183.69330615684282">gof.strategy.BicycleStrategy</node>
+    <node x="215.0" y="182.6840054205968">gof.strategy.AirplaneStrategy</node>
+    <node x="-220.26964296026324" y="-174.61132325915128">gof.strategy.PersonContext</node>
+    <node x="455.775011786877" y="174.0">gof.strategy.TrainStrategy</node>
+    <node x="239.31555779375685" y="-99.06890198876678">gof.strategy.TravelStrategy</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="gof.strategy.BicycleStrategy" target="gof.strategy.TravelStrategy">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="gof.strategy.TrainStrategy" target="gof.strategy.TravelStrategy">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="gof.strategy.PersonContext" target="gof.strategy.TravelStrategy">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="gof.strategy.AirplaneStrategy" target="gof.strategy.TravelStrategy">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="178.0" y="31.0" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Constructors</Category>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
