@@ -3,7 +3,7 @@ package demo.java.util;
 import java.util.HashMap;
 import java.util.Iterator;
 
-public class MapExam {
+public class MapExample {
     public static void main(String[] args) {
         HashMap<String, String> map = new HashMap<String, String>();
         map.put("name", "liuhongming");
