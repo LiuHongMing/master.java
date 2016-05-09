@@ -24,6 +24,10 @@ public class BaseTest {
         System.out.println(Integer.toBinaryString(-1));
         System.out.println(Integer.toBinaryString(-1 << 29));
         System.out.println(Integer.toBinaryString(-1 << 29 | 1));
+
+        int i = 0;
+        i = i++;
+        System.out.println(i);
     }
 
     public static int square2(int n) {
