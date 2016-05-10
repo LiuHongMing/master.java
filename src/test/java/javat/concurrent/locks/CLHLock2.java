@@ -37,8 +37,8 @@ public abstract class CLHLock2 implements Lock {
         if (prev != null) {
             while(prev.locked) {
             }
+            local.set(node);
         }
-        local.set(node);
     }
 
     public void unlock() {
