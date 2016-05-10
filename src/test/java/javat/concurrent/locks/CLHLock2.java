@@ -1,6 +1,7 @@
 package javat.concurrent.locks;
 
 import java.util.concurrent.atomic.AtomicReference;
+import java.util.concurrent.atomic.AtomicReferenceFieldUpdater;
 
 /**
  * CLH������
@@ -12,44 +13,42 @@ import java.util.concurrent.atomic.AtomicReference;
  * ���ǰ�������ڴ�λ�ñȽ�Զ�������ж�ǰ������locked�����ܽ�����ۿۣ�������SMPϵͳ�ṹ�¸÷����Ƿǳ���Ч�ġ�
  * һ�ֽ��NUMAϵͳ�ṹ��˼·��MCS��������
  */
-public abstract class CLHLock implements Lock {
+public abstract class CLHLock2 implements Lock {
 
-    AtomicReference<QNode> tail;
-    ThreadLocal<QNode> myNode;
-    ThreadLocal<QNode> myPred;
+    private volatile QNode tail;
 
-    public CLHLock() {
-        tail = new AtomicReference<>(new QNode());
-        myNode = new ThreadLocal<QNode>() {
+    private ThreadLocal<QNode> local;
+
+    private static AtomicReferenceFieldUpdater<CLHLock2, QNode> UPDATER =
+            AtomicReferenceFieldUpdater.newUpdater(CLHLock2.class, QNode.class, "tail");
+
+    public CLHLock2() {
+        local = new ThreadLocal<QNode>() {
             @Override
             protected QNode initialValue() {
                 return new QNode();
             }
         };
-        myPred = new ThreadLocal<QNode>() {
-            @Override
-            protected QNode initialValue() {
-                return null;
-            }
-        };
     }
 
     public void lock() {
-        QNode node = myNode.get();
-        node.locked = true;
-        QNode pred = tail.getAndSet(node);
-        myPred.set(pred);
-        while (pred.locked) {
+        QNode node = local.get();
+        QNode prev = UPDATER.getAndSet(this, node);
+        if (prev != null) {
+            while(prev.locked) {
+            }
         }
+        local.set(node);
     }
 
     public void unlock() {
-        QNode node = myNode.get();
-        node.locked = false;
-        myNode.set(myPred.get());
+        QNode node = local.get();
+        if (!UPDATER.compareAndSet(this, node, null)) {
+            node.locked = false;
+        }
     }
 
     private static class QNode {
-        volatile boolean locked;
+        volatile boolean locked = true;
     }
 }
