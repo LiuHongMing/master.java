@@ -1,5 +1,7 @@
 package concurrent.demo;
 
+import com.sun.javafx.webkit.ThemeClientImpl;
+
 /**
  * Interrupt方法并不能停止线程执行
  * 
@@ -34,17 +36,14 @@ public class WrongWayStopThread extends Thread {
 
 	@Override
 	public void run() {
-		while (!this.isInterrupted()) {
+		boolean isRunning = true;
+		// while (isRunning) { // correct
+		while (!this.isInterrupted()) { // wrong
 			System.out.println("Thread is running...");
-			long time = System.currentTimeMillis();
-			// == Thread.sleep(1000)
-			// while(System.currentTimeMillis() - time < 1000) {
-			// // 减少屏幕输出的空循环
-			// }
-
 			try {
 				Thread.sleep(1000);
 			} catch (InterruptedException e) {
+				isRunning = false;
 				e.printStackTrace();
 			}
 		}
