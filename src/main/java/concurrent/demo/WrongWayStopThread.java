@@ -1,7 +1,5 @@
 package concurrent.demo;
 
-import com.sun.javafx.webkit.ThemeClientImpl;
-
 /**
  * Interrupt方法并不能停止线程执行
  * 
