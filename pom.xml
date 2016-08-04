@@ -15,7 +15,6 @@
 
     <properties>
         <jdk.version>1.7</jdk.version>
-
         <!-- dependencies -->
         <javassist.version>3.18.0-GA</javassist.version>
         <asm.version>3.3.1</asm.version>
@@ -33,7 +32,6 @@
         <objenesis.version>2.2</objenesis.version>
         <cglib.version>2.2</cglib.version>
         <slf4j-log4j12.verison>1.7.12</slf4j-log4j12.verison>
-
         <!-- plugins -->
         <clean.plugin.version>2.4.1</clean.plugin.version>
         <compiler.plugin.version>3.1</compiler.plugin.version>
