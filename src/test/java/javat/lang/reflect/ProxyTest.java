@@ -8,6 +8,8 @@ import java.lang.reflect.Proxy;
 
 interface ProxyService {
     String hello(String name);
+
+    String greet(String name);
 }
 
 public class ProxyTest {
@@ -24,6 +26,7 @@ public class ProxyTest {
             }
         });
         System.out.println(service.hello("J.Ming"));
+        System.out.println(service.greet("Liu.Hong.Ming"));
     }
 
 }
