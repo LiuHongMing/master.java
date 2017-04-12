@@ -20,7 +20,7 @@ class Toy {
 }
 
 /**
- * RTTI£¨Run-Time Type Information)
+ * RTTI(Run-Time Type Information)
  */
 public class RTTITest {
 
