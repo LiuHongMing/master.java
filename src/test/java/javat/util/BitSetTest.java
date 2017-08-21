@@ -33,18 +33,25 @@ public class BitSetTest {
 
 	public static void main(String[] args) {
 
-		numeric();
+		//numeric();
 		
 		String s = "liuhongming";
 		String s2 = "jason.liuhongming";
 
 		BitSet bit = new BitSet();
 		for (int i = 0; i < s.length(); i++) {
-			bit.set((int) s.charAt(0));
+			bit.set((int) s.charAt(i));
 		}
 
 		BitSet bits = BitSet.valueOf(s2.getBytes());
 
+		System.out.println(bit);
+		System.out.println(bits);
+
 	    bit.andNot(bits);
+		System.out.println(bit);
+
+		int val = bit.cardinality();
+		System.out.println(val);
 	}
 }
